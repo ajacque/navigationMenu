@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  transition: all 0.4s ease-in-out;
+
+}
+
+body{
+  background-image: url("https://images.pexels.com/photos/313782/pexels-photo-313782.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+nav ul {
+ list-style: none;
+ width: 429px;
+ background-color: #5112ef;
+ padding: 24px 0;
+ height: 100vh;
+ clip-path: circle(10% at 10% 10%);
+}
+
+nav ul:hover{
+  clip-path: circle(100% at -45% 50%)
+}
+
+nav ul .menu {
+  width: 48px;
+  height: 40px;
+  position: relative;
+  margin-bottom: 24px;
+  margin-left: 24px;
+}
+
+nav ul .menu span {
+  position: absolute;
+  left: 0;
+  background-color: white;
+  padding: 2px;
+  width: 48px;
+  border-radius: 4px;
+}
+
+nav .menu span:nth-child(1){
+  top: 0px;
+}
+
+nav .menu span:nth-child(2){
+  top: 18px;
+  width: 28px;
+}
+
+nav .menu span:nth-child(3){
+  bottom: 0px;
+  width: 40px;
+}
+
+nav ul:hover .menu span:nth-child(1){
+  top: 0px;
+  left: 23px;
+  width: 4px;
+  height: 40px;
+}
+
+nav ul:hover .menu span:nth-child(2){
+  width: 40px;
+  left: 5px;
+}
+
+nav ul:hover .menu span:nth-child(3){
+  padding: 0px;
+  width: 0px
+}
+
+nav ul:hover .menu {
+  transform: rotateZ(360deg);
+}
+
+nav ul li {
+  padding: 24px 48px;
+  color:white;
+  text-transform: uppercase;
+}
+
+nav ul li:hover {
+  background-color: #481295;
+  padding-left: 70px;
+}
+
+h1{
+  position: relative;
+  text-align: center;
+  background-color: #5112ef;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: white;
+  text-transform: uppercase;
+  }
+
+  h1:hover{
+    color: #40F73A;
+    
+    transition: 1s ease-in-out;
+  }
